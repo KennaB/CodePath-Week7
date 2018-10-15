@@ -17,7 +17,7 @@ Time spent: **5** hours spent in total
     - Create and publish **text** post (instead of visual) containing "<script>eval(prompt(1))</script>"
     - Reload page
   - [ ] Affected source code:
-    - [Branch showing altered form](https://core.trac.wordpress.org/browser/branches/4.2?rev=33307)
+    - [Adding things like "$caps[] = 'do_not_allow';" for "empty" posts](https://core.trac.wordpress.org/changeset/33357)
 2. Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
