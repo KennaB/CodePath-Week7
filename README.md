@@ -7,15 +7,17 @@ Time spent: **5** hours spent in total
 
 ## Pentesting Report
 
-1. Vulnerability Name or ID
+1. Authenticated Stored Cross-Site Scripting (8111)
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.3
   - [ ] GIF Walkthrough: 
   - [ ] Steps to recreate: 
+    - Create **text** post (instead of visual) containing "<script>eval(prompt(1))</script>"
+    - Reload page
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Branch showing altered form](https://core.trac.wordpress.org/browser/branches/4.2?rev=33307)
 2. Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
