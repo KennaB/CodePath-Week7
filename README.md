@@ -14,7 +14,7 @@ Time spent: **5** hours spent in total
     - Fixed in version: 4.2.3
   - [ ] GIF Walkthrough: 
   - [ ] Steps to recreate: 
-    - Create **text** post (instead of visual) containing "<script>eval(prompt(1))</script>"
+    - Create and publish **text** post (instead of visual) containing "<script>eval(prompt(1))</script>"
     - Reload page
   - [ ] Affected source code:
     - [Branch showing altered form](https://core.trac.wordpress.org/browser/branches/4.2?rev=33307)
