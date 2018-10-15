@@ -8,7 +8,7 @@ Time spent: **5** hours spent in total
 ## Pentesting Report
 
 1. Authenticated Stored Cross-Site Scripting (8111)
-  - [ ] Summary: 
+  - [ ] Summary: A user can create posts containing malicious code, which could execute when loaded. This is especially damaging to blogs allowing unauthenicated or unpriviledged users to create posts.
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.3
@@ -18,16 +18,18 @@ Time spent: **5** hours spent in total
     - Create and publish **text** post (instead of visual) containing "<script>eval(prompt(1))</script>"
     - Reload page
   - [ ] Affected source code:
-    - [Adding things like "$caps[] = 'do_not_allow';" for "empty" posts](https://core.trac.wordpress.org/changeset/33357)
-2. Vulnerability Name or ID
+    - [Adding things like "'do_not_allow';" for "empty" posts](https://core.trac.wordpress.org/changeset/33357)
+    
+    
+2.  Customizer XSS & CSRF 8820
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+    - Vulnerability types: XSS & CSRF
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.15
   - [ ] GIF Walkthrough: 
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [AJAX function added to prevent injection](https://github.com/WordPress/WordPress/commit/3d10fef22d788f29aed745b0f5ff6f6baea69af3)
 3. Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
