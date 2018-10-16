@@ -32,15 +32,18 @@ Time spent: **5** hours spent in total
      - Edit theme template by adding a div and putting in Javascript/other exploit.
   - [ ] Affected source code:
     - [AJAX function added to prevent injection](https://github.com/WordPress/WordPress/commit/3d10fef22d788f29aed745b0f5ff6f6baea69af3)
-3. Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+    
+3. Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
+  - [ ] Summary: Creation of a malicious embed, which seems like a youtube video.
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.3
   - [ ] GIF Walkthrough: 
+    - ![](youtubegif.gif)
   - [ ] Steps to recreate: 
+    - Create post or comment using embeded content. Use stripcslash functions to pass Javascript tags in without detection.
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Snippet of code where handling of embedded content is improved](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
 
 
 ## Assets
