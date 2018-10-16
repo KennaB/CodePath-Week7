@@ -27,6 +27,7 @@ Time spent: **5** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: 4.2.15
   - [ ] GIF Walkthrough: 
+      ![](xssagain.gif)
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
     - [AJAX function added to prevent injection](https://github.com/WordPress/WordPress/commit/3d10fef22d788f29aed745b0f5ff6f6baea69af3)
