@@ -22,13 +22,14 @@ Time spent: **5** hours spent in total
     
     
 2.  Customizer XSS & CSRF 8820
-  - [ ] Summary: 
+  - [ ] Summary: Create an invisible div that evaluates Javascript; could easy do it **without** alerting the user.
     - Vulnerability types: XSS & CSRF
     - Tested in version: 4.2
     - Fixed in version: 4.2.15
   - [ ] GIF Walkthrough: 
       ![](xssagain.gif)
   - [ ] Steps to recreate: 
+     - Edit theme template by adding a div and putting in Javascript/other exploit.
   - [ ] Affected source code:
     - [AJAX function added to prevent injection](https://github.com/WordPress/WordPress/commit/3d10fef22d788f29aed745b0f5ff6f6baea69af3)
 3. Vulnerability Name or ID
